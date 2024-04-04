@@ -30,11 +30,11 @@ public class loginServlet extends HttpServlet {
 		String usex = request.getParameter("sex");
 		String[] usubject = request.getParameterValues("subject");
 		String res = "<html><h3>정보 확인 " + "<br>" + 
-		"<html><h3>이름 : "+ uname1 + "<br>" +
-		"<html><h3>별명 : " + uname2 + "<br>" +
-		"<html><h3>학년 : " + ugrade + "학년 <br>" +
-		"<html><h3>성별 : " + usex + "<br>"+
-		"<html><h3>과목 : ";
+		"이름 : "+ uname1 + "<br>" +
+		"별명 : " + uname2 + "<br>" +
+		"학년 : " + ugrade + "학년 <br>" +
+		"성별 : " + usex + "<br>"+
+		"과목 : ";
 		for(int i=0; i<usubject.length; i++)
 		res += usubject[i] +", ";
 		
