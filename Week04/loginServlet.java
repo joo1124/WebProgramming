@@ -35,9 +35,12 @@ public class loginServlet extends HttpServlet {
 		"학년 : " + ugrade + "학년 <br>" +
 		"성별 : " + usex + "<br>"+
 		"과목 : ";
-		for(int i=0; i<usubject.length; i++)
-		res += usubject[i] +", ";
-		
+		for(int i=0; i<usubject.length; i++) {
+			res += usubject[i];
+				if(i < usubject.length - 1) {
+				res += ", ";
+					}
+				}
 		res+="</h3></html>";
 		response.getWriter().print(res);
 	}
